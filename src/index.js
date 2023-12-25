@@ -34,8 +34,8 @@ export default class SpaceAge {
             case 'earth':
                 return futureBirthday - this.earthAge;
             case 'mercury':
-                console.log(futureBirthday);
-                console.log(this.earthAge);
+                return (futureBirthday - this.earthAge) / .24;
+            case 'mercury':
                 return (futureBirthday - this.earthAge) / .24;
         }
     }
