@@ -40,4 +40,10 @@ describe('SpaceAge', () => {
     const spaceAge = new SpaceAge();
     expect(spaceAge.getCurrentAge(33)).toEqual(33);
   });
+
+  test('it determines users current age in mercury years', () => {
+    const spaceAge = new SpaceAge();
+    spaceAge.changeCurrentPlanet("mercury");
+    expect(spaceAge.getCurrentAge(33)).toEqual(7.92);
+  });
 });
