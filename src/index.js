@@ -29,6 +29,10 @@ export default class SpaceAge {
         }
     }
 
+    yearsUntilBirthday(futureBirthday) {
+        return futureBirthday - this.earthAge;
+    }
+
     getCurrentAge() {
         switch (this.currentPlanet) {
             case 'earth':
