@@ -22,6 +22,8 @@ export default class SpaceAge {
                 return (this.earthAge - pastBirthday) / .62;
             case 'mars':
                 return (this.earthAge - pastBirthday) / 1.88;
+            default:
+                return `that planet isn't in this solar system`;
         }
     }
 
