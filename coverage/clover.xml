@@ -1,20 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1703471279137" clover="3.2.0">
-  <project timestamp="1703471279137" name="All files">
-    <metrics statements="11" coveredstatements="11" conditionals="6" coveredconditionals="6" methods="4" coveredmethods="4" elements="21" coveredelements="21" complexity="0" loc="11" ncloc="11" packages="1" files="1" classes="1"/>
+<coverage generated="1703471417460" clover="3.2.0">
+  <project timestamp="1703471417461" name="All files">
+    <metrics statements="12" coveredstatements="12" conditionals="6" coveredconditionals="6" methods="5" coveredmethods="5" elements="23" coveredelements="23" complexity="0" loc="12" ncloc="12" packages="1" files="1" classes="1"/>
     <file name="index.js" path="/Users/kelseyburt/Desktop/space-age/src/index.js">
-      <metrics statements="11" coveredstatements="11" conditionals="6" coveredconditionals="6" methods="4" coveredmethods="4"/>
+      <metrics statements="12" coveredstatements="12" conditionals="6" coveredconditionals="6" methods="5" coveredmethods="5"/>
       <line num="3" count="14" type="stmt"/>
       <line num="4" count="14" type="stmt"/>
       <line num="8" count="9" type="stmt"/>
       <line num="12" count="8" type="stmt"/>
-      <line num="16" count="6" type="cond" truecount="6" falsecount="0"/>
-      <line num="18" count="1" type="stmt"/>
-      <line num="20" count="1" type="stmt"/>
+      <line num="16" count="1" type="stmt"/>
+      <line num="20" count="6" type="cond" truecount="6" falsecount="0"/>
       <line num="22" count="1" type="stmt"/>
       <line num="24" count="1" type="stmt"/>
       <line num="26" count="1" type="stmt"/>
       <line num="28" count="1" type="stmt"/>
+      <line num="30" count="1" type="stmt"/>
+      <line num="32" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>
