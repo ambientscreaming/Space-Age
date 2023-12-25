@@ -157,4 +157,11 @@ describe('SpaceAge', () => {
     spaceAge.setEarthAge(33);
     expect(spaceAge.yearsUntilBirthday(42)).toEqual(9 / 11.86);
   });
+
+  test('it returns error message for unrecognized planet', () => {
+    const spaceAge = new SpaceAge();
+    spaceAge.changeCurrentPlanet("pluto");
+    spaceAge.setEarthAge(33);
+    expect(spaceAge.yearsUntilBirthday()).toEqual("that planet isn't in this solar system");
+  });
 });
