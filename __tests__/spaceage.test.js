@@ -11,4 +11,10 @@ describe('SpaceAge', () => {
     const spaceAge = new SpaceAge();
     expect(spaceAge.currentPlanet).toEqual("earth");
   });
+
+  test('it changes the current planet to mercury', () => {
+    const spaceAge = new SpaceAge();
+    spaceAge.changeCurrentPlanet("mercury");
+    expect(spaceAge.currentPlanet).toEqual("mercury");
+  });
 });
