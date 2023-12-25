@@ -150,4 +150,11 @@ describe('SpaceAge', () => {
     spaceAge.setEarthAge(33);
     expect(spaceAge.yearsUntilBirthday(42)).toEqual(9 / 1.88);
   });
+
+  test('it returns number of jupiter years between earth age and future birthday', () => {
+    const spaceAge = new SpaceAge();
+    spaceAge.changeCurrentPlanet("jupiter")
+    spaceAge.setEarthAge(33);
+    expect(spaceAge.yearsUntilBirthday(42)).toEqual(9 / 11.86);
+  });
 });
