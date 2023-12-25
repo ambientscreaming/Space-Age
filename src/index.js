@@ -13,6 +13,8 @@ export default class SpaceAge {
                 return earthAge;
             case 'mercury':
                 return earthAge * .24;
+            case 'venus':
+                return earthAge * .62;
             default:
                 console.log(`that planet isn't in this solar system`);
         }
