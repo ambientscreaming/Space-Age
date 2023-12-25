@@ -143,4 +143,11 @@ describe('SpaceAge', () => {
     spaceAge.setEarthAge(33);
     expect(spaceAge.yearsUntilBirthday(42)).toEqual(9 / .62);
   });
+
+  test('it returns number of mars years between earth age and future birthday', () => {
+    const spaceAge = new SpaceAge();
+    spaceAge.changeCurrentPlanet("mars")
+    spaceAge.setEarthAge(33);
+    expect(spaceAge.yearsUntilBirthday(42)).toEqual(9 / 1.88);
+  });
 });
