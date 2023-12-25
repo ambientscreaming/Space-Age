@@ -7,5 +7,8 @@ export default class SpaceAge {
         this.currentPlanet = newPlanet;
     }
 
+    getCurrentAge(earthAge) {
+        return earthAge;
+    }
 }
 
