@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1703471066007" clover="3.2.0">
-  <project timestamp="1703471066007" name="All files">
+<coverage generated="1703471279137" clover="3.2.0">
+  <project timestamp="1703471279137" name="All files">
     <metrics statements="11" coveredstatements="11" conditionals="6" coveredconditionals="6" methods="4" coveredmethods="4" elements="21" coveredelements="21" complexity="0" loc="11" ncloc="11" packages="1" files="1" classes="1"/>
     <file name="index.js" path="/Users/kelseyburt/Desktop/space-age/src/index.js">
       <metrics statements="11" coveredstatements="11" conditionals="6" coveredconditionals="6" methods="4" coveredmethods="4"/>
-      <line num="3" count="13" type="stmt"/>
-      <line num="4" count="13" type="stmt"/>
+      <line num="3" count="14" type="stmt"/>
+      <line num="4" count="14" type="stmt"/>
       <line num="8" count="9" type="stmt"/>
-      <line num="12" count="7" type="stmt"/>
+      <line num="12" count="8" type="stmt"/>
       <line num="16" count="6" type="cond" truecount="6" falsecount="0"/>
       <line num="18" count="1" type="stmt"/>
       <line num="20" count="1" type="stmt"/>

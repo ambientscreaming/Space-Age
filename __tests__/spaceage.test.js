@@ -82,4 +82,10 @@ describe('SpaceAge', () => {
     spaceAge.setEarthAge(33);
     expect(spaceAge.earthAge).toEqual(33);
   });
+
+  test('it returns number of earth years between earth age and past birthday', () => {
+    const spaceAge = new SpaceAge();
+    spaceAge.setEarthAge(33);
+    expect(spaceAge.yearsSinceBirthday(21)).toEqual(12);
+  });
 });
