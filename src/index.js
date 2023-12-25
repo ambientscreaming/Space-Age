@@ -18,6 +18,8 @@ export default class SpaceAge {
                 return this.earthAge - pastBirthday;
             case 'mercury':
                 return (this.earthAge - pastBirthday) / .24;
+            case 'venus':
+                return (this.earthAge - pastBirthday) / .62;
         }
     }
 

@@ -95,4 +95,11 @@ describe('SpaceAge', () => {
     spaceAge.setEarthAge(33);
     expect(spaceAge.yearsSinceBirthday(21)).toEqual(12 / .24);
   });
+
+  test('it returns number of venus years between earth age and past birthday', () => {
+    const spaceAge = new SpaceAge();
+    spaceAge.changeCurrentPlanet("venus")
+    spaceAge.setEarthAge(33);
+    expect(spaceAge.yearsSinceBirthday(21)).toEqual(12 / .62);
+  });
 });
