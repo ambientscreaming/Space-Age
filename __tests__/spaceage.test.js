@@ -123,4 +123,10 @@ describe('SpaceAge', () => {
     spaceAge.setEarthAge(33);
     expect(spaceAge.yearsSinceBirthday()).toEqual("that planet isn't in this solar system");
   });
+
+  test('it determines earth years between current earth birthday and future birthday', () => {
+    const spaceAge = new SpaceAge();
+    spaceAge.setEarthAge(33);
+    expect(spaceAge.yearsUntilBirthday(42)).toEqual(9);
+  });
 });
