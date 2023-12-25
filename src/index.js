@@ -41,6 +41,8 @@ export default class SpaceAge {
                 return (futureBirthday - this.earthAge) / 1.88;
             case 'jupiter':
                 return (futureBirthday - this.earthAge) / 11.86;
+            default:
+                return `that planet isn't in this solar system`;
         }
     }
 
