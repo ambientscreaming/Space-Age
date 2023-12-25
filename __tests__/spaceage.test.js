@@ -6,4 +6,9 @@ describe('SpaceAge', () => {
     const spaceAge = new SpaceAge();
     expect(spaceAge).toBeInstanceOf(SpaceAge);
   });
+
+  test('it sets earth as the default planet', () => {
+    const spaceAge = new SpaceAge();
+    expect(spaceAge.currentPlanet).toEqual("earth");
+  });
 });
