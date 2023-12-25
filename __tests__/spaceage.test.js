@@ -64,4 +64,10 @@ describe('SpaceAge', () => {
     spaceAge.changeCurrentPlanet("jupiter");
     expect(spaceAge.getCurrentAge(33)).toEqual(33 / 11.86);
   });
+
+  test('it returns error message for unrecognized planet', () => {
+    const spaceAge = new SpaceAge();
+    spaceAge.changeCurrentPlanet("pluto");
+    expect(spaceAge.getCurrentAge(33)).toEqual("that planet isn't in this solar system");
+  });
 });
