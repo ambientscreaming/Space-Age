@@ -35,4 +35,9 @@ describe('SpaceAge', () => {
     spaceAge.changeCurrentPlanet("jupiter");
     expect(spaceAge.currentPlanet).toEqual("jupiter");
   });
+
+  test('it determines users current age in earth years', () => {
+    const spaceAge = new SpaceAge();
+    expect(spaceAge.getCurrentAge(33)).toEqual(33);
+  });
 });
