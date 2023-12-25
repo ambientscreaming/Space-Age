@@ -20,7 +20,7 @@ export default class SpaceAge {
             case 'jupiter':
                 return earthAge / 11.86;
             default:
-                console.log(`that planet isn't in this solar system`);
+                return `that planet isn't in this solar system`;
         }
 
     }
