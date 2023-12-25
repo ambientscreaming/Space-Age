@@ -110,6 +110,13 @@ describe('SpaceAge', () => {
     expect(spaceAge.yearsSinceBirthday(21)).toEqual(12 / 1.88);
   });
 
+  test('it returns number of jupiter years between earth age and past birthday', () => {
+    const spaceAge = new SpaceAge();
+    spaceAge.changeCurrentPlanet("jupiter")
+    spaceAge.setEarthAge(33);
+    expect(spaceAge.yearsSinceBirthday(21)).toEqual(12 / 11.86);
+  });
+
   test('it returns error message for unrecognized planet', () => {
     const spaceAge = new SpaceAge();
     spaceAge.changeCurrentPlanet("pluto");
