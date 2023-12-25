@@ -44,18 +44,24 @@ describe('SpaceAge', () => {
   test('it determines users current age in mercury years', () => {
     const spaceAge = new SpaceAge();
     spaceAge.changeCurrentPlanet("mercury");
-    expect(spaceAge.getCurrentAge(33)).toEqual(7.92);
+    expect(spaceAge.getCurrentAge(33)).toEqual(137.5);
   });
 
   test('it determines users current age in venus years', () => {
     const spaceAge = new SpaceAge();
     spaceAge.changeCurrentPlanet("venus");
-    expect(spaceAge.getCurrentAge(33)).toEqual(20.46);
+    expect(spaceAge.getCurrentAge(33)).toEqual(53.225806451612904);
   });
 
   test('it determines users current age in mars years', () => {
     const spaceAge = new SpaceAge();
     spaceAge.changeCurrentPlanet("mars");
-    expect(spaceAge.getCurrentAge(33)).toEqual(62.04);
+    expect(spaceAge.getCurrentAge(33)).toEqual(17.5531914893617);
   });
+
+  /*test('it determines users current age in jupiter years', () => {
+    const spaceAge = new SpaceAge();
+    spaceAge.changeCurrentPlanet("jupiter");
+    expect(spaceAge.getCurrentAge(33)).toEqual(33/11.86);
+  });*/
 });
