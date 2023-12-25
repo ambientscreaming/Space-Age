@@ -13,7 +13,12 @@ export default class SpaceAge {
     }
 
     yearsSinceBirthday(pastBirthday) {
-        return this.earthAge - pastBirthday;
+        switch (this.currentPlanet) {
+            case 'earth':
+                return this.earthAge - pastBirthday;
+            case 'mercury':
+                return (this.earthAge - pastBirthday) / .24;
+        }
     }
 
     getCurrentAge() {
