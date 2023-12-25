@@ -8,7 +8,15 @@ export default class SpaceAge {
     }
 
     getCurrentAge(earthAge) {
-        return earthAge;
+        switch (this.currentPlanet) {
+            case 'earth':
+                return earthAge;
+            case 'mercury':
+                return earthAge * .24;
+            default:
+                console.log(`that planet isn't in this solar system`);
+        }
+
     }
 }
 
