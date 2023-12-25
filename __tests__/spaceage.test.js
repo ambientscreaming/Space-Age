@@ -88,4 +88,11 @@ describe('SpaceAge', () => {
     spaceAge.setEarthAge(33);
     expect(spaceAge.yearsSinceBirthday(21)).toEqual(12);
   });
+
+  test('it returns number of mercury years between earth age and past birthday', () => {
+    const spaceAge = new SpaceAge();
+    spaceAge.changeCurrentPlanet("mercury")
+    spaceAge.setEarthAge(33);
+    expect(spaceAge.yearsSinceBirthday(21)).toEqual(12 / .24);
+  });
 });
