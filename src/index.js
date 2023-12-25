@@ -1,24 +1,29 @@
 export default class SpaceAge {
     constructor() {
         this.currentPlanet = "earth";
+        this.earthAge = null;
     }
 
     changeCurrentPlanet(newPlanet) {
         this.currentPlanet = newPlanet;
     }
 
-    getCurrentAge(earthAge) {
+    setEarthAge(earthAge) {
+        this.earthAge = earthAge;
+    }
+
+    getCurrentAge() {
         switch (this.currentPlanet) {
             case 'earth':
-                return earthAge;
+                return this.earthAge;
             case 'mercury':
-                return earthAge / .24;
+                return this.earthAge / .24;
             case 'venus':
-                return earthAge / .62;
+                return this.earthAge / .62;
             case 'mars':
-                return earthAge / 1.88;
+                return this.earthAge / 1.88;
             case 'jupiter':
-                return earthAge / 11.86;
+                return this.earthAge / 11.86;
             default:
                 return `that planet isn't in this solar system`;
         }

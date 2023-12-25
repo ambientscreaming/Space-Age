@@ -38,36 +38,48 @@ describe('SpaceAge', () => {
 
   test('it determines users current age in earth years', () => {
     const spaceAge = new SpaceAge();
-    expect(spaceAge.getCurrentAge(33)).toEqual(33);
+    spaceAge.setEarthAge(33);
+    expect(spaceAge.getCurrentAge()).toEqual(33);
   });
 
   test('it determines users current age in mercury years', () => {
     const spaceAge = new SpaceAge();
+    spaceAge.setEarthAge(33);
     spaceAge.changeCurrentPlanet("mercury");
-    expect(spaceAge.getCurrentAge(33)).toEqual(137.5);
+    expect(spaceAge.getCurrentAge()).toEqual(137.5);
   });
 
   test('it determines users current age in venus years', () => {
     const spaceAge = new SpaceAge();
+    spaceAge.setEarthAge(33);
     spaceAge.changeCurrentPlanet("venus");
-    expect(spaceAge.getCurrentAge(33)).toEqual(53.225806451612904);
+    expect(spaceAge.getCurrentAge()).toEqual(53.225806451612904);
   });
 
   test('it determines users current age in mars years', () => {
     const spaceAge = new SpaceAge();
+    spaceAge.setEarthAge(33);
     spaceAge.changeCurrentPlanet("mars");
-    expect(spaceAge.getCurrentAge(33)).toEqual(17.5531914893617);
+    expect(spaceAge.getCurrentAge()).toEqual(17.5531914893617);
   });
 
   test('it determines users current age in jupiter years', () => {
     const spaceAge = new SpaceAge();
+    spaceAge.setEarthAge(33);
     spaceAge.changeCurrentPlanet("jupiter");
-    expect(spaceAge.getCurrentAge(33)).toEqual(33 / 11.86);
+    expect(spaceAge.getCurrentAge()).toEqual(33 / 11.86);
   });
 
   test('it returns error message for unrecognized planet', () => {
     const spaceAge = new SpaceAge();
+    spaceAge.setEarthAge(33);
     spaceAge.changeCurrentPlanet("pluto");
-    expect(spaceAge.getCurrentAge(33)).toEqual("that planet isn't in this solar system");
+    expect(spaceAge.getCurrentAge()).toEqual("that planet isn't in this solar system");
+  });
+
+  test('it sets current earth age', () => {
+    const spaceAge = new SpaceAge();
+    spaceAge.setEarthAge(33);
+    expect(spaceAge.earthAge).toEqual(33);
   });
 });
