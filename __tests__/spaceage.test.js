@@ -23,4 +23,10 @@ describe('SpaceAge', () => {
     spaceAge.changeCurrentPlanet("venus");
     expect(spaceAge.currentPlanet).toEqual("venus");
   });
+
+  test('it changes the current planet to mars', () => {
+    const spaceAge = new SpaceAge();
+    spaceAge.changeCurrentPlanet("mars");
+    expect(spaceAge.currentPlanet).toEqual("mars");
+  });
 });
