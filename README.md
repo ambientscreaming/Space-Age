@@ -1,86 +1,40 @@
-## <div align="center">Project name</div>
+# _Space Age_
 
-#### <div align="center">💻 _Learning project for (..................) (date)_ </div>
+#### By _**K.B. @ambientscreaming**_
 
-**_<p align="right">By Daniya Yelemessova_**</p>
+#### _An application that calculates your age on various planets!_
 
-<p align="center">
-  <img src="images/js.png" alt="js" width="30"/>
-</p>
+## Technologies Used
 
-<div><img src="" alt="screen of the program" width="50%" display="block" margin-left="auto" margin-right="auto"/></div>
+* _HTML_
+* _CSS_
+* _JavaScript_
+* _VS Code_
+* _GIT_
+* _Node.js and npm_
+* _Npm Packages_
+* _ESLint_
+* _Jest_
 
-![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+## Description
 
-## <div align="center"> 🛠️ _Technologies used:_
+_This application calculates your current age on Earth, Mars, Venus, Mercury, and Jupiter. It also caluates how many years from a past birthday, and how many until a future birthday!_
 
-- HTML
-- CSS
-- JavaScript
-- Visual Studio Code
-- GIT
-- Node.js and npm
-- npm Packages
-- Linter(ESLint)
-- Testing Framework(Jest)
+## Setup/Installation Requirements
 
-
-![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
-
-## <div align="center"> 🚥 _Installation and USAGE_
-
-<details>
-To set up and use this project locally for development or testing purposes, follow these steps:
-
-To get started, you'll need to clone this repository to your local machine. Open your terminal or command prompt and use the following command to do so:
-1. git clone 
-2. Navigate to the Project Directory, using **cd**
-3. Open the project using **code .**
-4. Install all packages with $ npm install.
-5. Start a development server with $ npm run start
-6. Linting JS files in the src folder with $ npm run lint
-7. Run tests with Jest using $ npm run test
-</details>
-
-## <div align="center"> ⌨️ _Tests_
-
-```
-describe('Name', () => {
-
-  test('description of the test', () => {
-    expect().toEqual();
-    expect().toEqual();
-    expect().toEqual();
-  });
-});
-
-```
+* _Open any web browser and paste the following link into the URL bar: https://github.com/ambientscreaming/Space-Age_
+* _Download the zip file to your desktop_
+* _Open using VS Code_
+* _To view live in the broswer, right click on the Index.HTML page in VS Code_
+* _And click "Open with Live Server"_
+* _Although, keep in mind this will yield a visually blank page_
+* _As this application doesn't yet have a user interface built yet!_
 
 
-### <div align="center"> 🤔 _Description:_
+## Known Bugs
 
+* _No known bugs; but it's still in the development stage so it's not exactly the prettiest application yet!_
 
+## License
 
-
-![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
-
-## <div align="center"> <img src="images/github.png" alt="github icon" width="30px"> _Link to site on Github Pages:_
-
-- [GitHub page link](https://github.com/DaniyaYelemessova)
-
-![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
-
-## <div align="center"> _Known Issues_
-
--no known issues at this time.
-
-## <div align="center"> 📬 _Contact Information_
-
-#### For any questions _[LinkedIn](https://www.linkedin.com/in/daniya-collings/)_
-
-## <div align="center"> 📘 _License and copyright:_
-
-> **_© Daniya Yelemessova, 2023_**  
-> ⚖️ _[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)_
-
-
+Copyright (c) GNU GENERAL PUBLIC LICENSE _12/24/23_ _Kelsey Burt_
